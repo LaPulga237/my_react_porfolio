@@ -24,7 +24,7 @@ const Footer = () => {
                &copy; 2025 Onana Dieudonné. All rights reserved. 
             </p>
             <div className="footer-bottom-right">
-                <a href=""><img src="./src/assets/icons8.svg" alt="" /></a>
+                <a href="https://github.com/LaPulga237"><img src="./src/assets/icons8.svg" alt="" /></a>
                 <p>Terms of Services</p>
                 <p>Privacy Policy</p>
                 <p>Connect with me</p>

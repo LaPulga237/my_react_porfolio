@@ -7,7 +7,7 @@ const Hero = () =>{
         <div className="hero">
             
             <img src={logo} alt="img not found" className="hero-img"/>
-            <h1> <span>I am Onana Dieudonne,</span> a Frontend Developer based in Cameroon.</h1>
+            <h1> <span>I am Onana Dieudonne,</span> a Fullstack Developer based in Cameroon.</h1>
             <p>
                 I am a passionate and driven junior
                 software engineering student with a strong

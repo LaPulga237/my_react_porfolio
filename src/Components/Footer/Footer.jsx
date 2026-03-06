@@ -1,11 +1,12 @@
 import React from 'react'
 import './Footer.css'
+import footer_img from "../../assets/lapulga2.jpg"
 const Footer = () => {
   return (
     <div className='footer'>
        <div className="footer-top">
             <div className="footer-top-left">
-                <img className='footer-img' src="./src/assets/lapulga2.jpg" alt="" />
+                <img className='footer-img' src={footer_img} alt="" />
                 <p>
                    I am a frontend developer with 2+ years of experience in companies like Nephus
                 </p>

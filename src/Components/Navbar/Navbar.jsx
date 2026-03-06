@@ -1,10 +1,11 @@
 import React from "react";
 import './navbar.css'
+import logo from "../../assets/lapulga3.jpg"
 const Navbar = () => {
 
     return (
         <div className="navbar">
-            <img src="./src/assets/lapulga3.jpg" alt="img not found" className="navLogo" />
+            <img src={logo} alt="img not found" className="navLogo" />
             <ul className="navUl">
                 <li className="navLinks"><a href="" className="links">Home</a></li>
                 <li className="navLinks"><a href="" className="links">Services</a></li>

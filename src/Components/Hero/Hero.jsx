@@ -1,11 +1,12 @@
 import React from "react";
 import './hero.css';
+import logo from "../../assets/onana.jpg"
 const Hero = () =>{
 
     return(
         <div className="hero">
             
-            <img src="./src/assets/onana.jpg" alt="img not found" className="hero-img"/>
+            <img src={logo} alt="img not found" className="hero-img"/>
             <h1> <span>I am Onana Dieudonne,</span> a Frontend Developer based in Cameroon.</h1>
             <p>
                 I am a passionate and driven junior

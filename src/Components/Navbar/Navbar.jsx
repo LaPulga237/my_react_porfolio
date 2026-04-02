@@ -1,19 +1,32 @@
 import React from "react";
 import './navbar.css'
-const Navbar = () => {
+import logo from '../../assets/lapulga3.jpg'
 
-    return (
-        <div className="navbar">
-            <img src="./src/assets/lapulga3.jpg" alt="img not found" className="navLogo" />
-            <ul className="navUl">
-                <li className="navLinks"><a href="" className="links">Home</a></li>
-                <li className="navLinks"><a href="" className="links">Services</a></li>
-                <li className="navLinks"><a href="" className="links">Contact</a></li>
-                <li className="navLinks"><a href="" className="links">About</a></li>
-            </ul>
-            <button className="navButton"><a href="" className="navButtonLink">Contact Me</a></button>
-        </div>
-    )
+const NAV_ITEMS = [
+  { label: 'Home', href: '#home' },
+  { label: 'Services', href: '#services' },
+  { label: 'Contact', href: '#contact' },
+  { label: 'About', href: '#about' }
+]
+
+const Navbar = () => {
+  return (
+    <nav className="navbar">
+      <img src={logo} alt="logo" className="navLogo" />
+      <ul className="navUl">
+        {NAV_ITEMS.map((item) => (
+          <li key={item.label} className="navLinks">
+            <a href={item.href} className="links">
+              {item.label}
+            </a>
+          </li>
+        ))}
+      </ul>
+      <a href="#contact" className="navButton navButtonLink">
+        Contact Me
+      </a>
+    </nav>
+  )
 }
 
 export default Navbar;

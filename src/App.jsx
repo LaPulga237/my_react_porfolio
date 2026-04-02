@@ -6,6 +6,7 @@ import Services from "./Components/Services/Services";
 import Contact from "./Components/Contact/Contact";
 import Footer from "./Components/Footer/Footer";
 
+
 const App = () =>{
 
     return (
@@ -16,6 +17,7 @@ const App = () =>{
             <Services />
             <Contact />
             <Footer />
+            
         </div>
     )
 }
